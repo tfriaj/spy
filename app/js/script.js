@@ -1,34 +1,19 @@
-// Passive event listeners
-jQuery.event.special.touchstart = {
-	setup: function (_, ns, handle) {
-		'use strict';
-    this.addEventListener('touchstart', handle, {
-      passive: !ns.includes('noPreventDefault')
-    });
-  }
-};
-jQuery.event.special.touchmove = {
-	setup: function (_, ns, handle) {
-		'use strict';
-    this.addEventListener('touchmove', handle, {
-      passive: !ns.includes('noPreventDefault')
-    });
-  }
-};
-
-// Preloader js
-$(window).on('load', function () {
-  'use strict';
-  $('.preloader').fadeOut(250);
-	setTimeout(() => {
-		$('.preloader').remove();
-	}, 500);
-});
 
 // on ready state
 $(document).ready(function () {
 	'use strict';
-
+	$(window).on("scroll", function () {
+    var windscroll = $(window).scrollTop();
+    if (windscroll >= 100) {
+      $("#mainnavigationBar").addClass("sticky-nav");
+    } else {
+      $("#mainnavigationBar").removeClass("sticky-nav");
+    }
+  });
+  $('.navbar-toggler').on( 'click', function() {
+    var navbar = $('#mainnavigationBar');
+    navbar.toggleClass('bg-nav');
+  });
 	// dropdown height fix
 	function dropdownHeightFix() {
 		var width = $(window).width();
@@ -56,19 +41,7 @@ $(document).ready(function () {
 	}
 	menuHumBurgerIcon();
 
-	// videoPopupInit
-	if ($('[data-bs-target="#videoModal"]').length !== 0) {
-		var $videoSrc;
-		$('[data-bs-target="#videoModal"]').click(function () {
-			$videoSrc = $(this).data('src');
-		});
-		$('#videoModal').on('shown.bs.modal', function (e) {
-			$('#showVideo').attr('src', $videoSrc + '?autoplay=1&amp;modestbranding=1&amp;showinfo=0');
-		});
-		$('#videoModal').on('hide.bs.modal', function (e) {
-			$('#showVideo').attr('src', $videoSrc);
-		});
-	}
+
 	
 	// counterUp
 	if($('.counter').length !== 0) {
@@ -104,34 +77,7 @@ $(document).ready(function () {
 		});
 	}
 
-	// brandCarousel fix
-	if($(".brand-carousel").length !== 0) {
-		new Swiper('.brand-carousel.swiper-container', {
-			speed: 400,
-			loop: true,
-			grabCursor: true,
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'bullets',
-				clickable: true
-			},
-			breakpoints: {
-				// when window width is >= 320px
-				320: {
-					slidesPerView: 2
-				},
-				480: {
-					slidesPerView: 3
-				},
-				767: {
-					slidesPerView: 4
-				},
-				991: {
-					slidesPerView: 5
-				}
-			}
-		});
-	}
+
 
 	// tab
 	$('.tab-content').find('.tab-pane').each(function (idx, item) {
@@ -157,41 +103,6 @@ $(document).ready(function () {
 		tabPanel.find('.active').removeClass('active');
 		tab.addClass('active');
 		tabPane.addClass('active');
-	});
-
-
-	// Accordions
-	$('.collapse').on('shown.bs.collapse', function () {
-		$(this).parent().find('.fas fa-plus').removeClass('fas fa-plus').addClass('fas fa-minus');
-	}).on('hidden.bs.collapse', function () {
-		$(this).parent().find('.fas fa-minus').removeClass('fas fa-minus').addClass('fas fa-plus');
-	});
-
-	
-	//post carousel
-	new Swiper('.post-carousel.swiper-container', {
-		speed: 400,
-		slidesPerView: 1,
-		loop: true,
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: true
-		}
-	});
-
-
-	//testiminials carousel
-	new Swiper('.testimonials-carousel.swiper-container', {
-		speed: 400,
-		loop: true,
-		grabCursor: true,
-		autoHeight: true,
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: true
-		},
 	});
 
 });

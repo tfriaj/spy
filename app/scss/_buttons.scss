@@ -1,17 +1,19 @@
 /* Button style */
 .btn {
   font-size: $font-size;
-  font-family: $font-secondary;
+  font-family: $font-primary;
   text-transform: capitalize;
-  padding: 0.95em 1.9em;
+  padding: 1.3rem 3rem;
   font-weight: 500;
   border: 1px solid;
   position: relative;
   z-index: 1;
-  transition: 0.3s ease;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
 
   &-sm {
-    padding: 0.7em 1.65em;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
   }
   &:hover,
   &:active,
@@ -23,23 +25,27 @@
 }
 
 .btn-primary {
-  background: $black;
   color: $white;
-  border: 0;
-  border-radius: 6px;
-  &:hover,
-  &:active,
-  &.active,
+  text-align: center;
+  text-transform: capitalize;
+  background: $black;
+  border-color: $black;
+  btn-check:focus + &,
   &:focus,
-  &.focus {
-    background: rgba($color-primary, 0.5);
+  &:active,
+  &:hover,
+  &:active:focus,
+  &:hover:focus {
+    background: $white;
+    color: $black;
+    border-color: $black;
+    box-shadow: none;
   }
 }
 
 .btn-outline-primary {
   color: $text-dark;
   border-color: $black;
-  font-weight: 700;
 
   &.active,
   &:hover,
@@ -50,6 +56,7 @@
     background: $black;
     border-color: transparent !important;
     color: $white;
+    box-shadow: none;
   }
 }
 
@@ -147,3 +154,60 @@
     transform: scale(1.1);
   }
 }
+.btn-primarys {
+  color: #222222;
+  background: $white;
+  border: 1px solid #222222;
+  font-family: $font-primary;
+  font-weight: 700;
+  text-transform: capitalize;
+  .btn-check:focus + &,
+  &:focus,
+  &:active,
+  &:hover,
+  &:active:focus,
+  &:hover:focus {
+    color: #222222 !important;
+    background: $white !important;
+    border-color: #222222;
+  }
+}
+// &-secondary {
+//   color: $color-white;
+//   text-align: center;
+//   text-transform: capitalize;
+//   background: $color-black;
+//   border: $base-border-width solid $color-black;
+//   transition: 0.3s all ease-in-out;
+
+//   btn-check:focus + &,
+//   &:focus,
+//   &:active,
+//   &:hover,
+//   &:active:focus,
+//   &:hover:focus {
+//     border: $base-border-width solid $color-black;
+//     background: $color-black;
+//     color: $color-white;
+//   }
+// }
+// &-secondary-white {
+//   color: $color-black;
+//   text-align: center;
+//   text-transform: capitalize;
+//   background: $color-white;
+//   border: $base-border-width solid $color-black;
+//   transition: 0.3s all ease-in-out;
+//   border-radius: 6px !important;
+
+//   btn-check:focus + &,
+//   &:focus,
+//   &:active,
+//   &:hover,
+//   &:active:focus,
+//   &:hover:focus {
+//     border: $base-border-width solid $black;
+//     background: $black;
+//     color: $white;
+//   }
+// }

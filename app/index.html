@@ -1,20 +1,31 @@
 @@include('header.htm')
 
 <main>
+  <div class="line container position-absolute w-100 h-100 d-flex justify-content-space-between top-0">
+    <span class="position-relative w-100"></span>
+    <span class="position-relative w-100"></span>
+    <span class="position-relative w-100"></span>
+    <span class="position-relative w-100"></span>
+    <span class="position-relative w-100"></span>
+    <span class="position-relative"></span>
+  </div>
   @@include('blocks/head.htm')
-  <section class="banner-section position-relative overflow-hidden">
-    <!--<div class="bord container position-absolute w-100 h-100 d-flex justify-content-space-between top-0">
-      <div class="bo-le position-relative w-100"></div>
-      <div class="bo-le position-relative w-100"></div>
-      <div class="bo-le position-relative w-100"></div>
-      <div class="bo-le position-relative w-100"></div>
-      <div class="bo-le position-relative w-100"></div>
-      <div class="bo-le position-relative"></div>
-    </div> -->
-    <div class="carve-shape ">
+  <!-----------------------
+  Banner section
+  ------------------------->
+  <section class="banner-section position-relative overflow-hidden content">
+    <div class="carve-shape bg-secondary">
+      <div class="container line h-100 d-flex justify-content-space-between top-0">
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative"></span>
+      </div>
     </div>
     <div class="container">
-      <div class="d-flex align-items-center">
+      <div class="row align-items-center flex-lg-nowrap text-center text-lg-start position-relative ">
         <div class="col-lg-10 mx-auto col-xl-8">
           <h1 class="mb-4">The smarter way to save documents
           </h1>
@@ -22,7 +33,7 @@
             lectus nibh.Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed suscipit
             tortor eget felis porttitor volutpat. Vivamus
           </p>
-          <form action="#" class="form-action mb-6 pe-10">
+          <form action="#" class="form-action mb-6 pb-1 pe-10">
             <div class="from-group">
               <div class="input-group">
                 <input type="email" class="form-control" placeholder="Enter Your Email Address">
@@ -52,24 +63,573 @@
             </ul>
           </div>
           <ul class="check-list check-list-inline">
-            <li>
-              <i class="fa-solid fa-check"></i>
+            <li class="border-end border-color pe-2">
+              <span class="ms-1 me-sm-2">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9009 0.957327C17.4207 0.477115 16.6423 0.477115 16.162 0.957327L6.163 10.9561L3.83797 8.63131C3.35776 8.1511 2.57933 8.1511 2.09909 8.63131L0.360159 10.3702C-0.120053 10.8504 -0.120053 11.6288 0.360159 12.1091L3.55466 15.3036L5.29355 17.0425C5.77377 17.5227 6.55246 17.5227 7.03244 17.0425L8.77133 15.3036L19.6398 4.43511C20.12 3.95489 20.12 3.17643 19.6398 2.69622L17.9009 0.957327Z"
+                    fill="#38E392"></path>
+                </svg>
+              </span>
+              Works anywhere
+            </li>
+            <li class="border-end border-color pe-2">
+              <span class="ms-1 me-sm-2">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9009 0.957327C17.4207 0.477115 16.6423 0.477115 16.162 0.957327L6.163 10.9561L3.83797 8.63131C3.35776 8.1511 2.57933 8.1511 2.09909 8.63131L0.360159 10.3702C-0.120053 10.8504 -0.120053 11.6288 0.360159 12.1091L3.55466 15.3036L5.29355 17.0425C5.77377 17.5227 6.55246 17.5227 7.03244 17.0425L8.77133 15.3036L19.6398 4.43511C20.12 3.95489 20.12 3.17643 19.6398 2.69622L17.9009 0.957327Z"
+                    fill="#38E392"></path>
+                </svg>
+              </span>
               Works anywhere
             </li>
             <li>
-              <i class="fa-solid fa-check"></i>
-              Works anywhere
-            </li>
-            <li>
-              <i class="fa-solid fa-check"></i>
+              <span class="ms-1 me-sm-2">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9009 0.957327C17.4207 0.477115 16.6423 0.477115 16.162 0.957327L6.163 10.9561L3.83797 8.63131C3.35776 8.1511 2.57933 8.1511 2.09909 8.63131L0.360159 10.3702C-0.120053 10.8504 -0.120053 11.6288 0.360159 12.1091L3.55466 15.3036L5.29355 17.0425C5.77377 17.5227 6.55246 17.5227 7.03244 17.0425L8.77133 15.3036L19.6398 4.43511C20.12 3.95489 20.12 3.17643 19.6398 2.69622L17.9009 0.957327Z"
+                    fill="#38E392"></path>
+                </svg>
+              </span>
               Works anywhere
             </li>
           </ul>
         </div>
         <div class="col-lg-12 col-xl-5">
-          <div class="banner-image">
+          <div class="banner-image position-relative">
             <img src="images/hero/hero-image.png" alt="banner-image">
+            <img src="images/hero/banner-shape-one.svg" class="shape-1" alt="shape">
+            <img src="images/hero/banner-shape-two.png" class="shape-2" alt="shape">
+            <img src="images/hero/banner-shape-three.png" class="shape-3" alt="shape">
+            <img src="images/hero/banner-shape-four.svg" class="shape-4" alt="shape">
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+  Brands section
+  ------------------------->
+  <section class="brands-section position-relative">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="brands-wrapper bg-white position-relative">
+            <div class="logo">
+              <img src="images/access/instacart.png" alt="instacart">
+            </div>
+            <div class="logo">
+              <img src="images/access/slack.png" alt="slack">
+            </div>
+            <div class="logo">
+              <img src="images/access/amazon.png" alt="amazon">
+            </div>
+            <div class="logo">
+              <img src="images/access/google.png" alt="google">
+            </div>
+            <div class="logo">
+              <img src="images/access/shopify.png" alt="shopify">
+            </div>
+            <div class="logo">
+              <img src="images/access/shopify.png" alt="shopify">
+            </div>
+            <div class="logo">
+              <img src="images/access/amazon.png" alt="amazon">
+            </div>
+            <div class="logo">
+              <img src="images/access/google.png" alt="google">
+            </div>
+            <div class="logo">
+              <img src="images/access/slack.png" alt="slack">
+            </div>
+            <div class="logo">
+              <img src="images/access/instacart.png" alt="instacart">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+  Services section
+  ------------------------->
+  <section class="services-section mb-6 pb-6 position-relative overflow-hidden">
+    <div class="carve-shape bg-primary-light">
+      <div class="container line h-100 d-flex justify-content-space-between top-0">
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative"></span>
+      </div>
+    </div>
+    <!-- <div class="services-shape position-absolute w-100 h-100">
+      <div class="shape-one position-absolute">
+        <img src="images/services/shape-one.svg" alt="vactor">
+      </div>
+      <div class="shape-two position-absolute">
+        <img src="images/services/shape-two.svg" alt="vactor">
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-12">
+          <div class="section-title position-relative text-start ">
+            <span class="">WE ARE THE ULTIMATE</span>
+            <div class="border-start border-2 border-teal ps-4 d-lg-flex align-items-end justify-content-xl-between ">
+              <div class="w-75 pe-6">
+                <h2 class="mb-4 text-capitalize ">A technology approach</h2>
+                <p class="pe-lg-12 pe-xl-18 pe-xxl-22 mb-5 mb-lg-0">Pellen tesque in ipsum id orci porta dapibus. Sed
+                  port
+                  titor nibh.
+                  Vivamus
+                  accumsan
+                  tincidunt.
+                  Vestibulum
+                  ac diam sit amet quam vehicula elementum sed </p>
+              </div>
+              <a href="#" class="btn btn-outline-primary">All Features</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xl-3">
+          <div class="card">
+            <div class="mb-4 mb-md-6">
+              <img src="images/services/vactor-one.svg" alt="services-icon">
+            </div>
+            <h4 class="card-title mb-4 text-black">Realtime function</h4>
+            <p class="card-text fs-6">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit
+              aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <div class="card">
+            <div class="mb-4 mb-md-6">
+              <img src="images/services/vactor-two.svg" alt="services-icon">
+            </div>
+            <h4 class="card-title mb-4 text-black">Accurate comment</h4>
+            <p class="card-text fs-6">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit
+              aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <div class="card">
+            <div class="mb-4 mb-md-6">
+              <img src="images/services/vactor-three.svg" alt="services-icon">
+            </div>
+            <h4 class="card-title mb-4 text-black" contenteditable="false">Plugins support Rec</h4>
+            <p class="card-text fs-6">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit
+              aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3">
+          <div class="card mb-0">
+            <div class="mb-4 mb-md-6">
+              <img src="images/services/vactor-four.svg" alt="services-icon">
+            </div>
+            <h4 class="card-title mb-4 text-black">All Integrations</h4>
+            <p class="card-text fs-6">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit
+              aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+  features section
+  ------------------------->
+  <section class="features-section position-relative overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="section-title">
+            <span>OUR STATISTICS</span>
+            <h2>Don't take our word for it</span>
+            </h2>
+            <p class="px-xl-10 px-xxl-15">Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan
+              tincidunt.
+              Vestibulum ac diam
+              sit amet quam vehicula elementum </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card py-6 border-1 border mb-4">
+            <div class="card-body">
+              <h4 class="card-title mb-4 text-black">features you will need</h4>
+              <p class="card-text fs-6">Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor
+                at
+                sem. Vivamus magna adipiscing elit. Praesent sapien massa, convallisa
+              </p>
+            </div>
+          </div>
+          <div class="card py-6 border-1 border mb-4">
+            <div class="card-body">
+              <h4 class="card-title mb-4 text-black">increase your sales</h4>
+              <p class="card-text fs-6">Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor
+                at
+                sem. Vivamus magna
+              </p>
+            </div>
+          </div>
+          <div class="card py-6 border-1 border">
+            <div class="card-body">
+              <h4 class="card-title mb-4 text-black">Choose right plan</h4>
+              <p class="card-text fs-6">Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor
+                at
+                sem. Vivamus magna adipiscing elit. Praesent sapien massa, convallisa
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="features-tab-banner position-relative ">
+            <img src="images/feature/feature-img-one.png" alt="feature-images">
+            <!-- <div class="shape-one position-absolute">
+              <img src="images/feature/vactor-one.svg" alt="vactor">
+            </div>
+            <div class="shape-two position-absolute">
+              <img src="images/feature/vactor-two.svg" alt="vactor">
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+  counter-up section
+  ------------------------->
+  <section class="counter-up-section position-relative" id="counter-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-xl-8 mx-auto">
+          <div class="section-title pb-6">
+            <span>OUR STATISTICS</span>
+            <h2>A few numbers we are proud</span>
+            </h2>
+            <p class="px-lg-10 px-xxl-15">Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan
+              tincidunt.
+              Vestibulum ac diam
+              sit amet quam vehicula elementum </p>
+          </div>
+        </div>
+        <!---==== Srart counter-up Section  ---=====-->
+        <div class="col-12">
+          <div class="counter-up-wrapper d-sm-grid bg-white text-center position-relative">
+            <div class="counter-up-content">
+              <div class="counter-up-content-item">
+                <div class="counter-percent mb-3">
+                  <span class="percent fw-bold"><span class="counter">94</span><span class="percent">%</span>
+                </div>
+                <p>client retention</p>
+              </div>
+            </div>
+            <div class="counter-up-content ">
+              <div class="counter-up-content-item">
+                <div class="counter-percent mb-3">
+                  <span class="percent fw-bold"><span class="counter">70</span><span class="percent">M+</span>
+                </div>
+                <p>emails per month</p>
+              </div>
+            </div>
+            <div class="counter-up-content ">
+              <div class="counter-up-content-item border-end-0 border-bottom-0">
+                <div class="counter-percent mb-3">
+                  <span class="percent fw-bold"><span class="counter">10</span><span class="percent">K+</span>
+                </div>
+                <p>monthly campaigns</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---==== End counter-up Section  ---=====-->
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+ how-it-work-section
+  ------------------------->
+  <section class="how-it-work-section position-relative overflow-hidden">
+    <div class="carve-shape bg-primary-light">
+      <div class="container line h-100 d-flex justify-content-space-between top-0">
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative"></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center mb-2 mb-xl-16 mb-xxl-22">
+        <div class="col-lg-6 col-xl-5 ms-auto order-2 order-lg-1">
+          <div class="item-image position-relative">
+            <img src="images/feature/feature-img-two.png" alt="feature-images">
+            <!-- <img src="images/feature/shape-two.png" alt="shape">
+            <img src="images/feature/shape-three.png" alt="shape"> -->
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="item-content text-start ms-2 ms-xl-0">
+            <span class="">Clear dynamic statements</span>
+            <h2 class="border-start border-2 border-teal ps-4 mb-4 text-capitalize ">Take your marketing
+              to the next level.</h2>
+            <p class="ps-4">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem.
+              Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget
+              elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Vestibulum ac
+              diam
+              sit amet quam </p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="item-content text-start ms-2 ms-xl-0 mb-6 mb-lg-0">
+            <span class="">Clear dynamic statements</span>
+            <h2 class="border-start border-2 border-teal ps-4 mb-4 text-capitalize ">Choose the right
+              plan for your team</h2>
+            <p class="ps-4">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem.
+              Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget
+              elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Vestibulum ac
+              diam
+              sit amet quam </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-5 me-auto">
+          <div class="item-image position-relative">
+            <img src="images/feature/feature-img-three.png" alt="feature-images">
+            <!-- <img src="images/feature/shape-two.png" alt="shape">
+            <img src="images/feature/shape-three.png" alt="shape"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+ testimonial-section
+  ------------------------->
+  <section class="testimonial-section position-relative overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-title text-start pb-5 pt-0">
+            <span class="">WE ARE THE ULTIMATE</span>
+            <h2 class="border-start border-2 border-teal ps-4 mb-1 text-capitalize ">Take an look at our
+              customers stories</h2>
+          </div>
+          <div class="card d-flex flex-sm-row p-0 border-0 mb-4 position-relative">
+            <div class="card-icon bg-secondary">
+              <img src="images/testimonial/instagram.png" alt="instagram-icon">
+            </div>
+            <div class="card-body px-4 pt-5 pb-5">
+              <h3 class="card-title mb-3">Vestibulum massa magna, lobortis lacinia purus aenean</h3>
+              <p class="card-text mb-4">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor
+                risus. Vestibulum ac diam sit amet quam
+              </p>
+              <div class="author d-flex align-items-center">
+                <div class="thumb me-2">
+                  <img src="images/testimonial/author-one.png" alt="logo">
+                </div>
+                <div class="author-content">
+                  <h4 class="mb-1">Devon Lane</h4>
+                  <p class="mb-0 ">VP growth at instagram</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="vactor-one position-absolute">
+              <img src="images/testimonial/Vector-two.svg" alt="Vector">
+            </div> -->
+          </div>
+          <div class="card d-flex flex-sm-row p-0 border-0 mb-4 mb-lg-0">
+            <div class="card-icon  bg-primary-light">
+              <img src="images/testimonial/twiter.png" alt="twiter-icon">
+            </div>
+            <div class="card-body px-4 pt-5 pb-5">
+              <h3 class="card-title mb-3">Curabitur consectetur cons equat massa sit amet congue</h3>
+              <p class="card-text mb-4">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor
+                risus. Vestibulum ac diam sit amet quam
+              </p>
+              <div class="author d-flex align-items-center">
+                <div class="thumb me-2">
+                  <img src="images/testimonial/author-two.png" alt="logo">
+                </div>
+                <div class="author-content">
+                  <h4 class="mb-1">Guy Hawkins</h4>
+                  <p class="mb-0 ">VP growth at twiter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card d-flex flex-sm-row p-0 border-0 mb-4 position-relative">
+            <div class="card-icon  bg-primary-light">
+              <img src="images/testimonial/facebook.png" alt="facebook-icon">
+            </div>
+            <div class="card-body px-4 pt-5 pb-5">
+              <h3 class="card-title mb-3">VProin ullamcorper ante in est commodo varius. Vestibsa</h3>
+              <p class="card-text mb-4">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor
+                risus. Vestibulum ac diam sit amet quam
+              </p>
+              <div class="author d-flex align-items-center">
+                <div class="thumb me-2">
+                  <img src="images/testimonial/author-three.png" alt="logo">
+                </div>
+                <div class="author-content">
+                  <h4 class="mb-1">Savannah Nguyen</h4>
+                  <p class="mb-0 ">VP growth at Facebook</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="vactor-two position-absolute">
+              <img src="images/testimonial/Vector-three.svg" alt="Vector">
+            </div> -->
+          </div>
+          <div class="card d-flex flex-sm-row p-0 border-0 position-relative">
+            <div class="card-icon  bg-secondary">
+              <img src="images/testimonial/youtube.png" alt="instagram-icon">
+            </div>
+            <div class="card-body px-4 pt-5 pb-5">
+              <h3 class="card-title mb-3">Suspendisse potenti. Nulla imperdiet diam mauris</h3>
+              <p class="card-text mb-4">elementum sed sit amet. Nulla port titor accumsan tincidunt. Proin eget tortor
+                risus. Vestibulum ac diam sit amet quam
+              </p>
+              <div class="author d-flex align-items-center">
+                <div class="thumb me-2">
+                  <img src="images/testimonial/author-four.png" alt="logo">
+                </div>
+                <div class="author-content">
+                  <h4 class="mb-1">Guy Hawkins</h4>
+                  <p class="mb-0 ">VP growth at twiter</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="vactor-three position-absolute">
+              <img src="images/testimonial/Vector.svg" alt="Vector">
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+ blog-section
+  ------------------------->
+  <section class="blog-section position-relative overflow-hidden">
+    <!-- <div class="blog-shap position-absolute h-100 w-100">
+    <div class="vactor-one position-absolute">
+      <img src="images/blog/vactor-one.svg" alt="vactor">
+    </div>
+    <div class="vactor-two position-absolute">
+      <img src="images/blog/vactor-two.svg" alt="vactor">
+    </div>
+  </div> -->
+    <div class="carve-shape bg-primary-light">
+      <div class="container line h-100 d-flex justify-content-space-between top-0">
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative w-100"></span>
+        <span class="position-relative"></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title position-relative text-start">
+            <span class="">WE ARE THE ULTIMATE</span>
+            <div class="border-start border-2 border-teal ps-4 d-lg-flex align-items-end justify-content-between">
+              <div class="w-75 pe-6">
+                <h2 class="mb-4 text-capitalize pe-xxl-25">Take a look at the latest
+                  articles from our blog</h2>
+              </div>
+              <div class="">
+                <a href="#" class=" btn btn-outline-primary">Browse all articles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <article class="blog-post card p-0 border-0 mb-8 mx-xl-0">
+            <div class="blog-post-thumb overflow-hidden">
+              <img src="images/blog/blog-thumb-1.png" alt="blog-thum" />
+            </div>
+            <div class="card-body pb-5">
+              <div class="blog-post-author position-relative d-flex align-items-center">
+                <img src="images/blog/author-one.png" class="" alt="">
+                <div class="author-details bg-black rounded-pill ps-6 pe-4 py-1">
+                  <p class="mb-0">Team Cook</p>
+                </div>
+              </div>
+              <a href="#" class="card-title mb-4 stretched-link">Virtual Reality for Training: Companies Moving in
+                Onboard
+                ing New Employees With VR</a>
+
+              <div class="blog-post-meta">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-inline-block px-3 py-1">March 11, 2022</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <article class="blog-post card p-0 border-0 mb-8 mx-xl-0">
+            <div class="blog-post-thumb overflow-hidden">
+              <img src="images/blog/blog-thumb-2.png" alt="blog-thum" />
+            </div>
+            <div class="card-body pb-5">
+              <div class="blog-post-author position-relative d-flex align-items-center">
+                <img src="images/blog/author-two.png" class="" alt="">
+                <div class="author-details bg-black rounded-pill ps-6 pe-4 py-1">
+                  <p class="mb-0">Team Cook</p>
+                </div>
+              </div>
+              <a href="#" class="card-title mb-4 stretched-link">Virtual Reality for Training: Companies Moving in
+                Onboard
+                ing New Employees With VR</a>
+              <div class="blog-post-meta">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-inline-block px-3 py-1">March 11, 2022</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <article class="blog-post card p-0 border-0 mb-8 mx-xl-0">
+            <div class="blog-post-thumb overflow-hidden ">
+              <img src="images/blog/blog-thumb-3.png" alt="blog-thum" />
+            </div>
+            <div class="card-body pb-5">
+              <div class="blog-post-author position-relative d-flex align-items-center">
+                <img src="images/blog/author-three.png" class="" alt="">
+                <div class="author-details bg-black rounded-pill ps-6 pe-4 py-1">
+                  <p class="mb-0">Team Cook</p>
+                </div>
+              </div>
+              <a href="#" class="card-title mb-4 stretched-link">Virtual Reality for Training: Companies Moving in
+                Onboard
+                ing New Employees With VR</a>
+
+              <div class="blog-post-meta">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-inline-block px-3 py-1">March 11, 2022</li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
