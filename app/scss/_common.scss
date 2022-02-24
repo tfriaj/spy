@@ -11,7 +11,6 @@ body {
 img {
   vertical-align: middle;
   border: 0;
-  max-width: 100%;
   height: auto;
 }
 
@@ -34,27 +33,6 @@ select {
 
 a:hover {
   color: $color-primary;
-}
-
-// section
-.section {
-  padding-top: 110px;
-  padding-bottom: 110px;
-  @include desktop {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-  &-sm {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-  @include tablet {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  &-title {
-    margin-bottom: 45px;
-  }
 }
 .subtitle {
   @extend .font-secondary;
@@ -354,7 +332,9 @@ form label {
     border-left: 1px dashed #eaeaea;
   }
 }
-
+.title {
+  width: 60%;
+}
 // Section-Title style
 .section-title,
 .item-content {
@@ -370,13 +350,16 @@ form label {
     margin-bottom: $base-margin * 1.5;
   }
   h2 {
+    font-size: $base-font-size * 3;
     margin-bottom: $base-margin * 1.5;
     line-height: 74px;
+    text-transform: capitalize;
   }
   p {
     font-size: $base-font-size * 1.1;
     line-height: 28px;
     margin-bottom: 0;
+    padding: 0 $base-padding * 3;
   }
 }
 
@@ -389,9 +372,7 @@ form label {
   @include desktop-xl {
     padding: $base-padding * 3.3 $base-padding * 1.5 $base-padding * 3.2;
   }
-  // img {
-  //   max-width: 100%;
-  // }
+
   &-body {
     padding: 0;
   }
@@ -422,6 +403,7 @@ form label {
     font-size: 20px;
     line-height: 30px;
     padding-right: $base-padding * 3.2;
+    margin-bottom: $base-margin * 2.5;
     @include desktop-xl {
       padding-right: $base-padding * 1.9;
     }
