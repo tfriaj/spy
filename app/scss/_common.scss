@@ -146,8 +146,8 @@ a:hover {
 .bg-secondary {
   background: $color-secondary !important;
 }
-.bg-secondary-soft {
-  background: lighten($color-secondary, 31.18) !important;
+.bg-quaternary {
+  background: $color-quaternary !important;
 }
 .text-secondary {
   color: $color-secondary !important;
@@ -174,8 +174,8 @@ a:hover {
     45.49
   ) !important;
 }
-.bg-dark {
-  background: #050038 !important;
+.text-dark {
+  color: #333333 !important;
 }
 .text-quaternary {
   color: $color-quaternary !important;

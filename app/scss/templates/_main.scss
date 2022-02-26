@@ -228,7 +228,10 @@ Counter Up Section Styles
 how-it-work-section
 **********/
 .how-it-work-section {
-  padding: $base-padding * 12 0;
+  padding: $base-padding * 12 0 $base-padding * 25;
+  @include desktop-xl {
+    padding: $base-padding * 12 0 $base-padding * 15;
+  }
   .carve-shape {
     clip-path: polygon(0 8%, 100% 0, 100% 82%, 0 100%);
     .line {
@@ -330,17 +333,21 @@ how-it-work-section
 Testimonial-section  
 **********/
 .testimonial-section {
+  padding: $base-padding * 8.5 0 $base-padding * 8;
   .card {
     box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.04);
     border-radius: 10px;
-
     &-icon {
-      text-align: center;
+      display: flex;
+      align-items: center;
       padding: 70px 60px;
     }
     &-title {
       font-size: $base-font-size * 1.5;
       font-family: $font-secondary;
+      @include desktop-xl {
+        font-size: $base-font-size * 1.25;
+      }
     }
     &-text {
       color: $text-dark;
@@ -384,7 +391,7 @@ Testimonial-section
 blog-section 
 **********/
 .blog-section {
-  margin-bottom: 100px;
+  padding-bottom: $base-padding * 9;
   .carve-shape {
     clip-path: polygon(0 0, 100% 0, 100% 89%, 0 52%);
     .line {
@@ -406,25 +413,28 @@ blog-section
   }
   .blog-post {
     border-radius: 10px;
-    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 15px 60px rgb(0 0 0 / 6%);
     &-thumb {
       border-radius: 10px 10px 0px 0px;
       img {
-        border-radius: 10px 10px 0px 0px;
         transform: scale(1) rotate(0deg);
-        width: 100%;
         transition: 0.6s ease-in-out;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1) rotate(0deg);
+        }
       }
     }
     &-author {
       margin: -$base-margin * 3 0 $base-margin * 1;
       z-index: 1;
-
       .author-details {
         margin-left: -$base-margin * 2;
         z-index: -1;
-        p {
-          font-size: $base-font-size * 0.9;
+        a {
+          font-family: $font-primary;
+          font-size: $base-font-size * 0.99;
         }
       }
     }
@@ -434,6 +444,16 @@ blog-section
       font-family: $font-primary;
       font-weight: 700;
       line-height: 34px;
+      display: inline-block;
+      margin-bottom: $base-margin * 1.5;
+      transition: all 0.3s ease-in-out;
+      @include desktop-xl {
+        font-size: $base-font-size * 1.25;
+        line-height: 28px;
+      }
+      &:hover {
+        color: $color-primary;
+      }
     }
     .card-body {
       padding: $base-padding * 0 $base-padding * 1.9 $base-padding * 3;
@@ -445,13 +465,6 @@ blog-section
         border-radius: 4px;
         font-family: $font-primary;
         font-weight: 700;
-      }
-    }
-    &:hover {
-      .blog-post-thumb {
-        img {
-          transform: scale(1.1) rotate(0deg);
-        }
       }
     }
   }
@@ -537,6 +550,7 @@ cta-section
 15. Footer Section Styles
 **********/
 .footer {
+  padding-top: $base-padding * 4.5;
   .carve-shape {
     clip-path: polygon(0 17%, 100% 40%, 100% 100%, 0 100%);
     .line {
@@ -603,6 +617,11 @@ cta-section
       font-family: $font-primary;
       &:hover {
         color: $white;
+      }
+    }
+    .copyright {
+      a {
+        color: white;
       }
     }
   }
